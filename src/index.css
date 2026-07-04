@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '.';
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+ 
+.app-wrapper{
+  padding: 40px 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(38, 36, 36);
+}
+
+input{
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 17px;
+  outline-color: rgb(142, 146, 241);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card-container{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+
+
+.card{
+  padding: 30px 20px;
+  box-shadow: 1px 3px 6px rgba(128, 128, 128, 0.302);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width: 31%;
+}
+.title{
+  font-size: 20px;
+  font-weight:600;
+  color: rgb(0,0,0,0.7);
+}
+
+.desc{
+  color: rgb(74, 74, 83,0.8);
+  font-size: 16px;
+}
+
+.tags{
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.tag{
+  padding: 5px 15px;
+  background: rgba(128, 128, 128, 0.1);
+  color: rgb(58, 58, 58,0.8);
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+
+@media (max-width:1150px) {
+  .card{
+    width: 45%;
+    padding: 30px;
+  }
+  .app-wrapper{
+    padding: 30px 50px;
+  }
+  input{
+    padding:10px
+  }
+  .title{
+    font-size: 18px;
+  }
+
+  .desc{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:600px) {
+  .card{
+    width: 100%;
+    padding: 30px;
+  }
+  .app-wrapper{
+    padding: 30px 30px;
+  }
+  input{
+    padding:10px
+  }
+  .title{
+    font-size: 18px;
+  }
+
+  .desc{
+    font-size: 16px;
+  }
+}
